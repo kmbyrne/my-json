@@ -1,4 +1,8 @@
 {
   "key": "value",
-  "due": "3/01/2022"
+  "objective": "Improve stability of Statement Generation",
+  "key-results": [
+    {"result": "Do something", "due":  "3/01/2022"},
+    {"result": "Do something else", "due":  "4/01/2022"}
+  ]
 }
