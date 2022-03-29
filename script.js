@@ -33,3 +33,13 @@ document.getElementById('fetchGoogle').addEventListener('click', event => {
             AJS.$('#movies').text(JSON.stringify(data));
         })
 })
+
+function renderOKRTable() {
+    fetch('https://raw.githubusercontent.com/kmbyrne/my-json/main/example.json')
+        .then(response => response.json())
+        .then(data => {
+            let okrs = data["okrs"];
+            AJS.$('#okr-table').html(okrs.reduce((prev, cur) => prev + "<tr><td>" + cur['objective']+"</td><td>" + cur['key-result'] + "</td></tr>"));
+        })
+}
+

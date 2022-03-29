@@ -1,8 +1,21 @@
 {
-  "key": "value",
-  "objective": "Improve stability of Statement Generation",
-  "key-results": [
-    {"result": "Do something", "due":  "3/01/2022"},
-    {"result": "Do something else", "due":  "4/01/2022"}
+  "okrs": [
+    {
+      "objective": "Improve stability of Statement Generation",
+      "key-results": [
+        {"result": "Do something", "due":  "3/01/2022"},
+        {"result": "Do something else", "due":  "4/01/2022"}
+      ]
+    },
+    {
+      "objective": "Have Performance Reviews",
+      "key-results": [
+        {
+          "result": "Do it",
+          "due": "02/14/2022"
+        }
+      ]
+    }
   ]
 }
+
