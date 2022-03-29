@@ -15,6 +15,15 @@
           "due": "02/14/2022"
         }
       ]
+    },
+    {
+      "objective": "Improve Team Sustainability",
+      "key-results": [
+        {
+          "result": "Define expectations for what Tech Owners need to do for quality",
+          "due": "03/31/2022"
+        }
+      ]
     }
   ]
 }

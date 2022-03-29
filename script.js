@@ -3,7 +3,7 @@ const oneDay = 1000 * 60 * 60 * 24;
 const threeDays = oneDay * 3;
 const oneWeek = oneDay * 7;
 
-function renderDueDate(destinationSelector, dueDateString) {
+function getDueDateStyle(dueDateString){
     let dueDate = Date.parse(dueDateString);
     let style = '';
     if (dueDate - now < 0) {
@@ -15,6 +15,11 @@ function renderDueDate(destinationSelector, dueDateString) {
     } else {
         style = 'color:green';
     }
+    return style;
+}
+
+function renderDueDate(destinationSelector, dueDateString) {
+    let style = getDueDateStyle(dueDateString);
     AJS.$(destinationSelector).html('<p style=' + style + '>' + dueDateString + '</p>');
 }
 
@@ -34,12 +39,30 @@ document.getElementById('fetchGoogle').addEventListener('click', event => {
         })
 })
 
+function createKeyResultsTD(krs) {
+    console.log("KRs:", krs);
+    let html = krs.map(kr => "<p>"+kr['result'] + ":<span style='"+getDueDateStyle(kr['due'])+"'>"+kr['due']+"</span></p>")
+    let rval = html.reduce((prev, cur) => prev + cur);
+    console.log("KRs RVAL:", rval);
+    return rval;
+}
+
+function createOKRRow(row) {
+    console.log("Row:", row);
+    return "<tr><td>"+row['objective']+"</td><td>"+createKeyResultsTD(row['key-results'])+"</td></tr>"
+}
+
+function createOKRRows(data) {
+    console.log("Data:", data)
+    return data['okrs'].map(createOKRRow);
+}
+
 function renderOKRTable() {
     fetch('https://raw.githubusercontent.com/kmbyrne/my-json/main/example.json')
         .then(response => response.json())
         .then(data => {
-            let okrs = data["okrs"];
-            AJS.$('#okr-table').html(okrs.reduce((prev, cur) => prev + "<tr><td>" + cur['objective']+"</td><td>" + cur['key-result'] + "</td></tr>"));
-        })
+
+            AJS.$('#okr-table').append(createOKRRows(data));
+        });
 }
 
