@@ -39,9 +39,17 @@ document.getElementById('fetchGoogle').addEventListener('click', event => {
         })
 })
 
+function getKRStyle(kr) {
+    if(kr && kr['done']) {
+        return 'text-decoration: overline';
+    } else {
+        return '';
+    }
+}
+
 function createKeyResultsTD(krs) {
     console.log("KRs:", krs);
-    let html = krs.map(kr => "<p>"+kr['result'] + ":<span style='"+getDueDateStyle(kr['due'])+"'>"+kr['due']+"</span></p>")
+    let html = krs.map(kr => "<p style='"+getKRStyle(kr)+"'>"+kr['result'] + ":<span style='"+getDueDateStyle(kr['due'])+"'>"+kr['due']+"</span></p>")
     let rval = html.reduce((prev, cur) => prev + cur);
     console.log("KRs RVAL:", rval);
     return rval;

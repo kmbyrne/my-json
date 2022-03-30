@@ -1,18 +1,12 @@
 {
   "okrs": [
     {
-      "objective": "Improve stability of Statement Generation",
-      "key-results": [
-        {"result": "Do something", "due":  "3/01/2022"},
-        {"result": "Do something else", "due":  "4/01/2022"}
-      ]
-    },
-    {
       "objective": "Have Performance Reviews",
       "key-results": [
         {
           "result": "Do it",
-          "due": "02/14/2022"
+          "due": "02/14/2022",
+          "done": true
         }
       ]
     },
@@ -21,19 +15,23 @@
       "key-results": [
         {
           "result": "Define expectations for what Tech Owners need to do for quality",
-          "due": "03/31/2022"
+          "due": "03/31/2022",
+          "done": false
         },
         {
           "result": "Define expectations for Mentoring",
-          "due": "03/31/2022"
+          "due": "03/31/2022",
+          "done": false
         },
         {
           "result": "Obtain task assignment/contribution information for each person. This means teams need to be tasking out, not just writing stories.",
-          "due": "04/07/2022"
+          "due": "04/07/2022",
+          "done": false
         },
         {
           "result": "Meet with Teams to review and train on Definition of Done",
-          "due": "03/01/2022"
+          "due": "03/01/2022",
+          "done": false
         }
       ]
     },
@@ -42,7 +40,8 @@
       "key-results": [
         {
           "result": "Flush out Epics",
-          "due": "03/31/2022"
+          "due": "03/31/2022",
+          "done": false
         }
       ]
     },
@@ -51,7 +50,8 @@
       "key-results": [
         {
           "result": "Read \"Measure what Matters\"",
-          "due": "03/01/2022"
+          "due": "03/01/2022",
+          "done": false
         }
       ]
     }
