@@ -30,6 +30,10 @@
         {
           "result": "Obtain task assignment/contribution information for each person. This means teams need to be tasking out, not just writing stories.",
           "due": "04/07/2022"
+        },
+        {
+          "result": "Meet with Teams to review and train on Definition of Done",
+          "due": "03/01/2022"
         }
       ]
     },
