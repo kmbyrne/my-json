@@ -39,7 +39,7 @@
       "objective": "Improve Data Quality",
       "key-results": [
         {
-          "result": "Clean up premium/ledger amounts",
+          "result": "Clean up premium/ledger amounts (BSC-25273)",
           "due": "05/31/2022",
           "done": false
         }
