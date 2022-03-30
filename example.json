@@ -32,6 +32,21 @@
           "result": "Meet with Teams to review and train on Definition of Done",
           "due": "03/01/2022",
           "done": false
+        },
+        {
+          "result": "Get teams to provide technical details in the technical tasks",
+          "due": "04/30/2022",
+          "done": false
+        }
+      ]
+    },
+    {
+      "objective": "Improve Product Quality",
+      "key-results": [
+        {
+          "result": "Mandate zero NPE policy in prod logs",
+          "due": "04/30/2022",
+          "done": false
         }
       ]
     },
