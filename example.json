@@ -32,6 +32,24 @@
           "due": "04/07/2022"
         }
       ]
+    },
+    {
+      "objective": "Spending Accounts Project",
+      "key-results": [
+        {
+          "result": "Flush out Epics",
+          "due": "03/31/2022"
+        }
+      ]
+    },
+    {
+      "objective": "Personal Development",
+      "key-results": [
+        {
+          "result": "Read \"Measure what Matters\"",
+          "due": "03/01/2022"
+        }
+      ]
     }
   ]
 }
