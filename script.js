@@ -55,9 +55,18 @@ function createKeyResultsTD(krs) {
     return rval;
 }
 
+function getTRStyle(row) {
+    let allDone = row['key-results'].map(row => row['done']).reduce((prev, cur) => prev && cur);
+    if(allDone) {
+        return 'text-decoration: line-through;vertical-align: text-top';
+    } else {
+        return 'vertical-align: text-top';
+    }
+}
+
 function createOKRRow(row) {
     console.log("Row:", row);
-    return "<tr><td>"+row['objective']+"</td><td>"+createKeyResultsTD(row['key-results'])+"</td></tr>"
+    return "<tr style='"+getTRStyle(row)+"'><td>"+row['objective']+"</td><td>"+createKeyResultsTD(row['key-results'])+"</td></tr>"
 }
 
 function createOKRRows(data) {
