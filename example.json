@@ -37,6 +37,11 @@
           "result": "Get teams to provide technical details in the technical tasks",
           "due": "04/07/2022",
           "done": false
+        },
+        {
+          "result": "Get senior devs to contribute to technical task definitions for junior devs during sprint planning",
+          "due": "04/15/2022",
+          "done": false
         }
       ]
     },
