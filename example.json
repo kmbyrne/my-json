@@ -21,7 +21,7 @@
         {
           "result": "Define expectations for Mentoring",
           "due": "03/31/2022",
-          "done": false
+          "done": true
         },
         {
           "result": "Obtain task assignment/contribution information for each person. This means teams need to be tasking out, not just writing stories.",
